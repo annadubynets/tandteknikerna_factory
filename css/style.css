@@ -138,6 +138,10 @@ p {
   padding: 87px 0px;
 }
 
+.navbar-dark .navbar-toggler {
+  border-color: transparent;
+}
+
 .products-section a {
   color: #0A1B24;
 }
