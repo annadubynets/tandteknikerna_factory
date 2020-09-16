@@ -1,0 +1,81 @@
+@import "bootstrap.min.css";
+@import "variables";
+@import "typography";
+@import "backgrounds";
+@import "buttons";
+@import "mixins";
+@import "navbars";
+@import "text";
+
+.main-section {
+  background-image: url("../images/main_picture.png");
+  background-repeat: no-repeat;
+  padding: 87px 0px;
+}
+
+.products-section {
+  a {
+    color: $black-color;
+    &:hover {
+      color: $gray-light-color;
+    }
+  }
+}
+
+.card:hover, .card:focus {
+  background-color: $blue-color;
+  color: $white-color;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $gray-color;
+  background: transparent;
+  padding: 8px 10px;
+  margin-bottom: 35px;color: $gray-color;
+  border-radius: 0px;
+}
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+footer {
+  a {
+    color: $white-color;
+    text-decoration: none;
+  }
+
+  .line-lg {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: $white-color;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+header .contact-group li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 15px;
+  @include max-screen($md-screen){
+    padding-bottom: 20px;
+  }
+}
