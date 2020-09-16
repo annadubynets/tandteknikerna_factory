@@ -208,4 +208,12 @@ header .contact-group li {
   }
 }
 
+.delivery-schedule-section .card-text {
+  color: #4F5457;
+}
+
+.delivery-schedule-section .card-text:hover, .card-text:focus, .card-text:active {
+  color: #ffffff;
+}
+
 /*# sourceMappingURL=style.css.map */

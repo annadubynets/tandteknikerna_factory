@@ -84,3 +84,11 @@ header .contact-group li {
     padding-bottom: 20px;
   }
 }
+
+.delivery-schedule-section .card-text {
+  color: $gray-color;
+}
+
+.delivery-schedule-section .card-text:hover, .card-text:focus, .card-text:active {
+  color: $white-color;
+}
