@@ -134,6 +134,7 @@ p {
 .main-section {
   background-image: url("../images/main_picture.png");
   background-repeat: no-repeat;
+  background-position: center;
   padding: 87px 0px;
 }
 
