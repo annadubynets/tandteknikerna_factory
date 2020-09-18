@@ -210,7 +210,7 @@ p {
 header .contact-group li {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 24px;
+  padding-right: 24px;
 }
 @media screen and (max-width: 768px) {
   header .contact-group li {
