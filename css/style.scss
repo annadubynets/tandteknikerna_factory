@@ -11,8 +11,10 @@
 .main-section {
   background-image: url("../images/main_picture.png");
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 87px 0px;
+  padding: 150px 0px;
+  @include max-screen($lg-screen) {
+    padding: 87px 0px 120px;
+  }
 }
 
 .navbar-dark .navbar-toggler {
@@ -64,7 +66,7 @@
 header .contact-group li {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 15px;
+  padding-left: 24px;
   @include max-screen($md-screen){
     padding-bottom: 20px;
   }

@@ -64,6 +64,9 @@ h1 {
   font-family: $font-family-secondary;
   font-size: $font-size-xl;
   color: $black-color;
+  @include max-screen($lg-screen) {
+    font-size: 36px;
+  }
 }
 
 h2 {

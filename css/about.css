@@ -49,6 +49,11 @@ h1 {
   font-size: 50px;
   color: #0A1B24;
 }
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-family: "OpenSans-Regular", sans-serif;
@@ -117,6 +122,10 @@ p {
 
 .navbar-nav .nav-item .nav-link:hover, .navbar-nav .nav-item .nav-link:focus {
   color: #ADC4D6;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .text-white {

@@ -49,6 +49,11 @@ h1 {
   font-size: 50px;
   color: #0A1B24;
 }
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 h2 {
   font-family: "OpenSans-Regular", sans-serif;
@@ -119,6 +124,10 @@ p {
   color: #ADC4D6;
 }
 
+.navbar {
+  padding: 0;
+}
+
 .text-white {
   color: #ffffff !important;
 }
@@ -146,8 +155,12 @@ p {
 .main-section {
   background-image: url("../images/main_picture.png");
   background-repeat: no-repeat;
-  background-position: center;
-  padding: 87px 0px;
+  padding: 150px 0px;
+}
+@media screen and (max-width: 992px) {
+  .main-section {
+    padding: 87px 0px 120px;
+  }
 }
 
 .navbar-dark .navbar-toggler {
@@ -197,7 +210,7 @@ p {
 header .contact-group li {
   display: inline-block;
   vertical-align: middle;
-  padding-left: 15px;
+  padding-left: 24px;
 }
 @media screen and (max-width: 768px) {
   header .contact-group li {
