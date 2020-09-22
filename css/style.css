@@ -174,21 +174,25 @@ p {
   color: #797373;
 }
 
-.card:hover, .card:focus {
-  background-color: #468FBC;
-  color: #ffffff;
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+.card {
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.card:hover {
+  background: #468FBC;
 }
 
 .form-group input {
   width: 100%;
-  border: none;
-  border-bottom: 1px solid #4F5457;
   background: transparent;
   padding: 8px 10px;
   margin-bottom: 20px;
-  color: #4F5457;
   border-radius: 0px;
 }
 
@@ -243,6 +247,57 @@ footer .line-lg {
   background-color: #ffffff;
   bottom: -20px;
   left: 0;
+}
+
+.slideExpandUp {
+  animation-name: slideExpandUp;
+  -webkit-animation-name: slideExpandUp;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  visibility: visible !important;
+}
+
+@keyframes slideExpandUp {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-8%);
+  }
+  65% {
+    transform: translateY(4%);
+  }
+  80% {
+    transform: translateY(-4%);
+  }
+  95% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideExpandUp {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-8%);
+  }
+  65% {
+    -webkit-transform: translateY(4%);
+  }
+  80% {
+    -webkit-transform: translateY(-4%);
+  }
+  95% {
+    -webkit-transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
